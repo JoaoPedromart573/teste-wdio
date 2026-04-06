@@ -16,7 +16,7 @@ describe('Funcionalidade: Tela de formulários', async () => {
         expect(await formPage.validarOpcao()).toEqual('Appium is awesome')
         await driver.pause(5000)
     });
-    it.only('Deve trocar o botão de on para off', async () => {
+    it('Deve trocar o botão de on para off', async () => {
         //Trocar para on
         const botaoOnOff = await driver.$("accessibility id:switch");
         await botaoOnOff.click();
